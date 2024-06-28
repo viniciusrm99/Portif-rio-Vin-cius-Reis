@@ -21,7 +21,6 @@
 
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 a {
@@ -58,6 +57,113 @@ body::-webkit-scrollbar-thumb {
     --tamanhoFonteMedia: ;
     --tamanhoFonteGrande: 60px;
     ;
+}
+
+
+.background section {
+    max-width: 1200px;
+}
+
+section .flex {
+    display: flex;
+}
+
+/* Estilos especificos */
+
+/* Seção de body*/
+body {
+    background-color: #D3DADB;
+    font-size: 40px;
+    font-family: "Concert One", sans-serif;
+    color: #e78229;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+body .background {
+    min-height: 100vh;
+    height: 110vh;
+    font-weight: 800;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(imgs/bhv6vu7oyl8a1.png);
+}
+
+/* Seção de header */
+
+#header {
+    position: fixed;
+    width: 100%;
+    transition: 0.8s;
+}
+
+.rolagem-header {
+    background-color: #0C1D31;
+    padding: 20px 75px;
+    z-index: 5;
+}
+
+
+header .container-header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header .logo {
+    max-width: 200px;
+}
+
+header .logo h2 {
+    font-size: 45px;
+    color: white;
+    text-shadow: 0px 0px 40px black;
+
+
+}
+
+header .logo h2 :hover {
+    font-size: 72px;
+    color: #e78229;
+    cursor: pointer;
+}
+
+
+header .logo h2 p {
+    font-size: 70px;
+    line-height: 35px;
+    padding-left: 20px;
+    color: var(--PrimeiraCor);
+}
+
+header nav ul li {
+    display: inline-block;
+
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+
+}
+
+header nav ul li :hover {
+    color: #D98F4E;
+}
+
+.wrapperInicio {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 .wrapper-btn-inicial {
@@ -104,105 +210,13 @@ body::-webkit-scrollbar-thumb {
     background-image: none;
     background-color: var(--PrimeiraCor);
     color: white;
-}
 
-.background section {
-    max-width: 1200px;
-}
-
-section .flex {
-    display: flex;
-}
-
-/* Estilos especificos */
-
-/* Seção de body*/
-body {
-    background-color: #D3DADB;
-    font-size: 40px;
-    font-family: "Concert One", sans-serif;
-    color: #e78229;
-    width: 100%;
-    height: 100%;
-
-
-}
-
-body .background {
-    min-height: 100vh;
-    height: 100%;
-    font-weight: 800;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(imgs/bhv6vu7oyl8a1.png);
-}
-
-/* Seção de header */
-header {
-    padding: 75px;
-
-}
-
-.wrapperInicio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-}
-
-header .container-header {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header .logo {
-    max-width: 200px;
-}
-
-header .logo h2 {
-    font-size: 45px;
-    color: white;
-    text-shadow: 0px 0px 40px black;
-
-
-}
-
-header .logo h2 :hover {
-    font-size: 72px;
-    color: #e78229;
-    cursor: pointer;
-}
-
-
-header .logo h2 p {
-    font-size: 70px;
-    line-height: 35px;
-    padding-left: 20px;
-    color: var(--PrimeiraCor);
-}
-
-header nav ul li {
-    display: inline-block;
-
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding-right: 20px;
-
-}
-
-header nav ul li :hover {
-    color: #D98F4E;
 }
 
 /* Seção de inicio */
 .wrapper-tela-inicial {
+    position: relative;
+    top: 250px;
     margin: 20PX 0PX 0px 0px;
     padding: 0px 0px 50px 0px;
     color: white;
@@ -550,16 +564,44 @@ footer h4 {
 
 /* Responsividade */
 
-@media screen and (min-width: 300px) and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
     .container-header {
+
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        position: static;
+    }
+
+
+    .container-header {
+        position: fixed;
+        left: 35%;
+    }
+
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .wrapper-tela-inicial {
+        height: 100%;
+        position: relative;
+        top: 150px;
+
+    }
+
+    body .background {
+        height: 1400px;
+        padding-bottom: 50px;
     }
 
     header {
+        position: static;
+
         padding: 10px 0px;
     }
+
+
 
     header .logo h2 {
 
@@ -661,10 +703,197 @@ footer h4 {
 
 }
 
+@media screen and (max-width: 900px) {
+    .container-header {
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: static;
+    }
+
+
+    .container-header {
+        position: fixed;
+        left: 35%;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .wrapper-tela-inicial {
+        height: 100%;
+        position: relative;
+        top: 150px;
+
+    }
+
+    body .background {
+        height: 800px;
+        padding-bottom: 50px;
+    }
+
+    header {
+        position: static;
+
+        padding: 10px 0px;
+    }
+
+    header .logo h2 {
+
+        text-align: center;
+    }
+
+    header .logo h2 p {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    header .logo h2 :hover {
+        font-size: 70px;
+        color: #e78229;
+        cursor: pointer;
+    }
+
+
+    .btn-contato {
+        display: none;
+    }
+
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding-right: 20px;
+    }
+
+    .icon {
+        padding: 50px 6px 40px;
+    }
+
+    .icon p {
+        display: none;
+    }
+
+    .wrapper-sobre-principal {
+
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        align-items: center;
+
+    }
+
+
+    .wrapper-tela-inicial h1 {
+
+
+        font-size: 60px;
+        text-align: center;
+        max-width: 880px;
+    }
+
+    .wrapper-tela-inicial p {
+        text-align: center;
+    }
+
+    .simbolo {
+        display: none;
+    }
+
+    .wrapper-btn-inicial {
+        justify-content: center;
+    }
+
+    .descricao {
+        display: none;
+    }
+
+    .cards {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .article-box:hover {
+        transform: none;
+    }
+
+    .wrapper-habilidades-conteudo {
+        padding-top: 15px;
+    }
+
+    #habilidades {
+        min-height: 100%;
+        justify-content: center;
+    }
+
+    .wrapper-contato {
+        gap: 0px;
+    }
+
+    .rolagem-header {
+        padding: 0px 0px 5px;
+        height: 100px;
+    }
+
+}
+
 @media screen and (min-width: 900px) and (max-width: 1200px) {
     .container-header {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
+        height: 200px;
+    }
+
+    header {
+        padding: 0px
+    }
+
+    .wrapper-tela-inicial {
+        top: 200px;
+    }
+
+    body .background {
+        height: 800px;
+        padding-bottom: 50px;
+    }
+
+    .rolagem-header {
+        padding: 5px 0px;
+        gap: 0px;
+    }
+
+    .btn-contato {
+        display: none;
+    }
+
+    header .logo h2 p {
+        font-size: 60px;
+    }
+
+    header .logo h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 75px 20px;
+    }
+
+    body .background {
+        padding-bottom: 50px;
+    }
+
+    .rolagem-header {
+        padding: 0px;
     }
 }
