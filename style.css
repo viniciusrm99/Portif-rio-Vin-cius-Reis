@@ -712,11 +712,6 @@ footer h4 {
     }
 
 
-    .container-header {
-        position: fixed;
-        left: 35%;
-    }
-
     .menu-desktop {
         display: none;
     }
@@ -735,6 +730,9 @@ footer h4 {
     header {
         position: static;
         padding: 10px 0px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     header .logo h2 {
