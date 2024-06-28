@@ -227,6 +227,7 @@ header nav ul li :hover {
     text-align: left;
     margin-bottom: 60px;
     max-width: 750px;
+    width: 100%;
 }
 
 
@@ -547,6 +548,8 @@ footer h4 {
     text-align: center;
 }
 
+/* Responsividade */
+
 @media screen and (min-width: 300px) and (max-width: 900px) {
     .container-header {
         display: flex;
@@ -636,6 +639,7 @@ footer h4 {
 
     .cards {
         justify-content: center;
+        max-width: 100%;
     }
 
     .article-box:hover {
@@ -646,13 +650,18 @@ footer h4 {
         padding-top: 15px;
     }
 
+    #habilidades {
+        min-height: 100%;
+        justify-content: center;
+    }
+
     .wrapper-contato {
         gap: 0px;
     }
 
 }
 
-@media screen and (min-width: 300px) and (max-width: 900px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
     .container-header {
         display: flex;
         flex-direction: column;
