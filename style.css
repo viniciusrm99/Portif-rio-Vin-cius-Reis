@@ -97,7 +97,7 @@ body .background {
 
 #header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     transition: 0.8s;
 }
 
