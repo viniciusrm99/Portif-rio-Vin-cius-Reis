@@ -28,6 +28,38 @@ html {
     margin: 0 auto;
 }
 
+.txt-animado {
+    color: #D98F4E;
+}
+
+.txt-animado span {
+    position: relative;
+
+}
+
+.txt-animado span::before {
+    content: "";
+    color: white;
+    animation: palavras 30s infinite;
+
+}
+
+.txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    border-bottom: 8px solid #e78229;
+    right: -20px;
+    animation: cursor .7s infinite, digita 30s steps(15) infinite;
+    width: calc(100% + 25px);
+
+
+
+
+}
+
+
+
 a {
     text-decoration: none;
 
@@ -916,5 +948,67 @@ footer h4 {
 
     .rolagem-header {
         padding: 0px;
+    }
+}
+
+@keyframes palavras {
+
+    0%,
+    20% {
+        content: "TECNOLOGIA INOVADORA";
+    }
+
+    21%,
+    40% {
+        content: "DESENVOLVIMENTO ÁGIL";
+    }
+
+    41%,
+    60% {
+        content: "EXPERIÊNCIAS INTERATIVAS";
+    }
+
+    61%,
+    80% {
+        content: "INTERFACE USUÁRIO";
+    }
+
+    81%,
+    100% {
+        content: "SOLUÇÕES PERSONALIZADAS";
+    }
+}
+
+/* @keyframes cursor {
+    0% {
+        border-left: 8px solid #000d1a26;
+    }
+} */
+
+@keyframes digita {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 25px);
     }
 }
