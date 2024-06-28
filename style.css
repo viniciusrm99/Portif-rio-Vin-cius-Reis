@@ -696,12 +696,24 @@ footer h4 {
 
         min-height: 100%;
         justify-content: center;
+        padding-top: 10px;
     }
 
     .wrapper-contato {
         gap: 0px;
     }
 
+    #contato {
+        padding-top: 10px;
+    }
+
+    #projetos {
+        padding-top: 10px;
+    }
+
+    #sobre {
+        padding-top: 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -840,6 +852,9 @@ footer h4 {
         padding: 0px 0px 5px;
         height: 100px;
     }
+
+
+
 
     footer {
         font-size: 20px;
