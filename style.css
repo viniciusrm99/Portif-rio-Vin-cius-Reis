@@ -251,9 +251,8 @@ header nav ul li :hover {
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 50px;
-    padding-top: 20px;
+    gap: 50px;
+    padding-top: 100px;
 
 
 }
@@ -337,9 +336,9 @@ header nav ul li :hover {
 
 /* Seção de habilidades */
 #habilidades {
-    background-color: #000D1A;
+    background-color: #091A2E;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 100px;
     min-height: 650px;
 
 }
@@ -402,6 +401,7 @@ header nav ul li :hover {
     text-align: center;
     overflow: hidden;
     padding-bottom: 50px;
+    padding-top: 100px;
 }
 
 #projetos video {
@@ -422,7 +422,6 @@ header nav ul li :hover {
 }
 
 .wrapper-projetos {
-    padding-top: 60px;
     height: 100%;
     z-index: 1;
     position: relative;
@@ -492,8 +491,8 @@ header nav ul li :hover {
 
 /* Seção de contato */
 #contato {
-    padding-top: 50px;
-    background-color: #000D1A;
+    padding-top: 100px;
+    background-color: #091A2E;
 }
 
 
@@ -553,7 +552,7 @@ footer {
     height: 95px;
     background-color: hsl(210, 100%, 6%);
     align-items: center;
-    padding: 0px 25px;
+    padding: 0px 25px 10px;
     font-size: 30px;
 
 }
@@ -689,10 +688,12 @@ footer h4 {
     }
 
     .wrapper-habilidades-conteudo {
+
         padding-top: 15px;
     }
 
     #habilidades {
+
         min-height: 100%;
         justify-content: center;
     }
@@ -725,6 +726,10 @@ footer h4 {
     body .background {
         height: 800px;
         padding-bottom: 50px;
+    }
+
+    #header {
+        transition: 0.3s;
     }
 
     header {
@@ -782,6 +787,7 @@ footer h4 {
         flex-direction: column;
         gap: 3%;
         align-items: center;
+        text-align: center;
 
     }
 
@@ -835,6 +841,9 @@ footer h4 {
         height: 100px;
     }
 
+    footer {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
