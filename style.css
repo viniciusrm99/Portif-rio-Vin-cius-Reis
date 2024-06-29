@@ -627,17 +627,22 @@ footer h4 {
     }
 
     body .background {
-        height: 1400px;
+        max-height: 100vh;
         padding-bottom: 50px;
+        min-height: 700px;
     }
 
     header {
+        display: flex;
+        justify-content: center;
         position: static;
-
-        padding: 10px 0px;
+        align-items: center;
+        padding: 60px 0px;
     }
 
-
+    .rolagem-header {
+        padding: 20px 0px;
+    }
 
     header .logo h2 {
 
@@ -751,9 +756,18 @@ footer h4 {
     #sobre {
         padding-top: 10px;
     }
+
+    .txt-animado span::after {
+        animation: none;
+        border-bottom: 0px;
+    }
+
+    p {
+        color: white;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
     .container-header {
         display: flex;
         flex-direction: column;
@@ -770,6 +784,12 @@ footer h4 {
         height: 100%;
         position: relative;
         top: 150px;
+        color: #D98F4E;
+        padding-top: 100px;
+    }
+
+    .wrapper-tela-inicial h1 {
+        color: #D98F4E;
     }
 
     body .background {
@@ -890,12 +910,29 @@ footer h4 {
         height: 100px;
     }
 
+    .txt-animado span::before {
+        content: " TECNOLOGIA INOVADORA";
+        color: WHITE;
 
+    }
 
+    .txt-animado span::after {
+        display: none;
+    }
+
+    p {
+        color: white;
+    }
 
     footer {
         font-size: 20px;
     }
+
+
+
+
+
+
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -949,66 +986,67 @@ footer h4 {
     .rolagem-header {
         padding: 0px;
     }
-}
 
-@keyframes palavras {
 
-    0%,
-    20% {
-        content: "TECNOLOGIA INOVADORA";
+
+    @keyframes palavras {
+
+        0%,
+        20% {
+            content: "TECNOLOGIA INOVADORA";
+        }
+
+        21%,
+        40% {
+            content: "DESENVOLVIMENTO ÁGIL";
+        }
+
+        41%,
+        60% {
+            content: "EXPERIÊNCIAS INTERATIVAS";
+        }
+
+        61%,
+        80% {
+            content: "INTERFACE USUÁRIO";
+        }
+
+        81%,
+        100% {
+            content: "SOLUÇÕES PERSONALIZADAS";
+        }
     }
 
-    21%,
-    40% {
-        content: "DESENVOLVIMENTO ÁGIL";
-    }
-
-    41%,
-    60% {
-        content: "EXPERIÊNCIAS INTERATIVAS";
-    }
-
-    61%,
-    80% {
-        content: "INTERFACE USUÁRIO";
-    }
-
-    81%,
-    100% {
-        content: "SOLUÇÕES PERSONALIZADAS";
-    }
-}
-
-/* @keyframes cursor {
+    /* @keyframes cursor {
     0% {
         border-left: 8px solid #000d1a26;
     }
 } */
 
-@keyframes digita {
+    @keyframes digita {
 
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95% {
-        width: 0;
-    }
+        10%,
+        15%,
+        30%,
+        35%,
+        50%,
+        55%,
+        70%,
+        75%,
+        90%,
+        95% {
+            width: 0;
+        }
 
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85% {
-        width: calc(100% + 25px);
+        5%,
+        20%,
+        25%,
+        40%,
+        45%,
+        60%,
+        65%,
+        80%,
+        85% {
+            width: calc(100% + 25px);
+        }
     }
-}
