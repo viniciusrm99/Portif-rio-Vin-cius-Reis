@@ -758,8 +758,9 @@ footer h4 {
     }
 
     .txt-animado span::before {
-        content: " TECNOLOGIA INOVADORA";
+        content: " TECNOLOGIA";
         color: WHITE;
+        text-align: center;
 
     }
 
@@ -771,13 +772,14 @@ footer h4 {
         color: white;
     }
 
-    p {
-        color: white;
-    }
-
-    footer {
+    .button footer {
         font-size: 20px;
     }
+
+    .btn-Download-CV button {
+        font-size: 30px;
+    }
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
