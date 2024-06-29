@@ -699,10 +699,19 @@ footer h4 {
     .wrapper-tela-inicial h1 {
 
 
-        font-size: 45px;
+        font-size: 38px;
         text-align: center;
         max-width: 880px;
     }
+
+    .wrapper-tela-inicial p {
+
+
+        font-size: 30px;
+        text-align: center;
+        max-width: 880px;
+    }
+
 
     .wrapper-tela-inicial p {
         text-align: center;
