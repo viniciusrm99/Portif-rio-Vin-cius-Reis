@@ -757,9 +757,18 @@ footer h4 {
         padding-top: 10px;
     }
 
+    .txt-animado span::before {
+        content: " TECNOLOGIA INOVADORA";
+        color: WHITE;
+
+    }
+
     .txt-animado span::after {
-        animation: none;
-        border-bottom: 0px;
+        display: none;
+    }
+
+    p {
+        color: white;
     }
 
     p {
