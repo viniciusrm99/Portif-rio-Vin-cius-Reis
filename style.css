@@ -265,8 +265,6 @@ header nav ul li :hover {
 }
 
 .wrapper-tela-inicial h1 {
-
-
     font-size: 60px;
     text-align: left;
     align-items: flex-start;
@@ -630,6 +628,7 @@ footer h4 {
         max-height: 100vh;
         padding-bottom: 50px;
         min-height: 700px;
+
     }
 
     header {
@@ -641,7 +640,8 @@ footer h4 {
     }
 
     .rolagem-header {
-        padding: 20px 0px;
+        padding: 40px 0px 30px;
+
     }
 
     header .logo h2 {
@@ -699,7 +699,7 @@ footer h4 {
     .wrapper-tela-inicial h1 {
 
 
-        font-size: 60px;
+        font-size: 45px;
         text-align: center;
         max-width: 880px;
     }
