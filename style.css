@@ -976,7 +976,6 @@ footer h4 {
     }
 
     body .background {
-        height: 800px;
         padding-bottom: 50px;
     }
 
@@ -987,6 +986,10 @@ footer h4 {
 
     .btn-contato {
         display: none;
+    }
+
+    .txt-animado {
+        padding-top: 90px;
     }
 
     header .logo h2 p {
@@ -1011,66 +1014,70 @@ footer h4 {
         padding: 0px;
     }
 
+    .txt-animado h1 {
+        padding-top: 600px;
+    }
+}
 
 
-    @keyframes palavras {
+@keyframes palavras {
 
-        0%,
-        20% {
-            content: "TECNOLOGIA INOVADORA";
-        }
-
-        21%,
-        40% {
-            content: "DESENVOLVIMENTO ÁGIL";
-        }
-
-        41%,
-        60% {
-            content: "EXPERIÊNCIAS INTERATIVAS";
-        }
-
-        61%,
-        80% {
-            content: "INTERFACE USUÁRIO";
-        }
-
-        81%,
-        100% {
-            content: "SOLUÇÕES PERSONALIZADAS";
-        }
+    0%,
+    20% {
+        content: "TECNOLOGIA INOVADORA";
     }
 
-    /* @keyframes cursor {
+    21%,
+    40% {
+        content: "DESENVOLVIMENTO ÁGIL";
+    }
+
+    41%,
+    60% {
+        content: "EXPERIÊNCIAS INTERATIVAS";
+    }
+
+    61%,
+    80% {
+        content: "INTERFACE USUÁRIO";
+    }
+
+    81%,
+    100% {
+        content: "SOLUÇÕES PERSONALIZADAS";
+    }
+}
+
+/* @keyframes cursor {
     0% {
         border-left: 8px solid #000d1a26;
     }
 } */
 
-    @keyframes digita {
+@keyframes digita {
 
-        10%,
-        15%,
-        30%,
-        35%,
-        50%,
-        55%,
-        70%,
-        75%,
-        90%,
-        95% {
-            width: 0;
-        }
-
-        5%,
-        20%,
-        25%,
-        40%,
-        45%,
-        60%,
-        65%,
-        80%,
-        85% {
-            width: calc(100% + 25px);
-        }
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
     }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 25px);
+    }
+}
