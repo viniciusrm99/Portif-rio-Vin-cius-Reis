@@ -766,8 +766,14 @@ footer h4 {
         padding-top: 10px;
     }
 
+    .wrapper-tela-inicial h1 {
+        font-size: 30px;
+    }
+
     .txt-animado span::before {
+        animation: none;
         content: " TECNOLOGIA";
+        font-size: 28px;
         color: WHITE;
         text-align: center;
 
@@ -775,10 +781,12 @@ footer h4 {
 
     .txt-animado span::after {
         display: none;
+
     }
 
     p {
         color: white;
+
     }
 
     .button footer {
@@ -786,7 +794,7 @@ footer h4 {
     }
 
     .btn-Download-CV button {
-        font-size: 30px;
+        font-size: 20px;
     }
 
 }
@@ -937,7 +945,7 @@ footer h4 {
     .txt-animado span::before {
         content: " TECNOLOGIA INOVADORA";
         color: WHITE;
-
+        font-size: 32px;
     }
 
     .txt-animado span::after {
@@ -989,7 +997,17 @@ footer h4 {
     }
 
     .txt-animado {
-        padding-top: 90px;
+        padding-top: 50px;
+    }
+
+    .wrapper-tela-inicial h1 {
+        font-size: 42px;
+        padding-right: 400px;
+    }
+
+    .txt-animado span::before {
+
+        font-size: 40px;
     }
 
     header .logo h2 p {
