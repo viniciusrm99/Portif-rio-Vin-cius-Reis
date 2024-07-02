@@ -607,13 +607,14 @@ footer h4 {
 
 /* Responsividade */
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
+@media screen and (min-width: 100px) and (max-width: 600px) {
     .container-header {
 
         display: flex;
         flex-direction: column;
         position: static;
     }
+
 
 
     .container-header {
@@ -734,6 +735,10 @@ footer h4 {
     }
 
     .descricao {
+        display: none;
+    }
+
+    .wrapper-habilidade-conteudo-texto {
         display: none;
     }
 
