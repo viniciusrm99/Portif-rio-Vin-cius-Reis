@@ -287,7 +287,7 @@ header nav ul li :hover {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-top: 100px;
+    padding-top: 120px;
 
 
 }
@@ -373,7 +373,7 @@ header nav ul li :hover {
 #habilidades {
     background-color: #091A2E;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 120px;
     min-height: 650px;
 
 }
@@ -444,7 +444,7 @@ p.texto-selecionavel {
     text-align: center;
     overflow: hidden;
     padding-bottom: 50px;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 #projetos video {
@@ -534,7 +534,7 @@ p.texto-selecionavel {
 
 /* Seção de contato */
 #contato {
-    padding-top: 100px;
+    padding-top: 120px;
     background-color: #091A2E;
 }
 
