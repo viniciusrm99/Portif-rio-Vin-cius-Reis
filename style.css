@@ -924,9 +924,14 @@ footer h4 {
         justify-content: center;
     }
 
-    .descricao {
-        display: none;
+    .descricao h2 {
+        font-size: 40px;
     }
+
+    .descricao p {
+        font-size: 30px;
+    }
+
 
     .cards {
         justify-content: center;
@@ -991,6 +996,8 @@ footer h4 {
     .btn-Download-CV {
         display: none;
     }
+
+
 
     header {
         padding: 0px
