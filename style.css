@@ -50,7 +50,7 @@ html {
     height: 80px;
     border-bottom: 8px solid #e78229;
     right: -20px;
-    animation: cursor .7s infinite, digita 30s steps(15) infinite;
+    animation: cursor .7s infinite, digita 33s steps(15) infinite;
     width: calc(100% + 25px);
 
 
@@ -988,6 +988,10 @@ footer h4 {
         height: 200px;
     }
 
+    .btn-Download-CV {
+        display: none;
+    }
+
     header {
         padding: 0px
     }
@@ -1030,6 +1034,13 @@ footer h4 {
     header .logo h2 {
         font-size: 50px;
     }
+
+
+
+    .txt-animado span::after {
+        display: none;
+
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1037,6 +1048,9 @@ footer h4 {
         padding: 75px 20px;
     }
 
+    .wrapper-btn-inicial {
+        display: ;
+    }
 
     body .background {
         padding-bottom: 50px;
