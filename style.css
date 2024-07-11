@@ -1110,6 +1110,6 @@ footer h4 {
     65%,
     80%,
     85% {
-        width: calc(100% + 25px);
+        width: 700px;
     }
 }
