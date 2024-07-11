@@ -1055,26 +1055,16 @@ footer h4 {
 @keyframes palavras {
 
     0%,
-    20% {
-        content: "TECNOLOGIA INOVADORA";
+    33% {
+        content: "TECNOLOGIAS INOVADORAS";
     }
 
-    21%,
-    40% {
-        content: "DESENVOLVIMENTO ÁGIL";
-    }
-
-    41%,
-    60% {
+    34%,
+    63% {
         content: "EXPERIÊNCIAS INTERATIVAS";
     }
 
-    61%,
-    80% {
-        content: "INTERFACE USUÁRIO";
-    }
-
-    81%,
+    64%,
     100% {
         content: "SOLUÇÕES PERSONALIZADAS";
     }
