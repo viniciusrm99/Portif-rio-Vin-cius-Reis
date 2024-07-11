@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 
+
     <title>Portifório Vinicius Reis</title>
 </head>
 
@@ -256,9 +257,29 @@
                 Reis.</span></h4>
     </footer>
     </div>
-
-    <script src="animacoes.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var descriptions = {
+                'box-html': "Habilidade em HTML, utilizado para estruturar o conteúdo das páginas web.",
+                'box-css': "Conhecimento em CSS, usado para estilizar e formatar elementos HTML.",
+                'box-sql': "Habilidade em SQL, utilizado para gerenciar e consultar bancos de dados relacionais.",
+                'box-js': "Conhecimento em JavaScript, usado para adicionar interatividade e dinamismo às páginas web.",
+                'box-java': "Habilidade em Java, utilizado para desenvolver aplicativos de software robustos e escaláveis.",
+                'box-csharpe': "Conhecimento em C#, usado principalmente para desenvolvimento de software na plataforma .NET.",
+                'box-angular': "Habilidade em Angular, um framework JavaScript para construção de aplicações web dinâmicas e escaláveis.",
+                'box-git': "Conhecimento em Git, utilizado para controle de versão e colaboração em projetos de desenvolvimento."
+            };
+
+            $('.box').click(function () {
+                let clique = $(this).attr('id');
+                $('.texto-selecionavel').html(descriptions[clique]);
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
