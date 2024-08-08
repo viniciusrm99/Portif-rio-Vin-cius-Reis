@@ -11,7 +11,7 @@ $(document).ready(function () {
         'box-css': "Conhecimento em CSS, usado para estilizar e formatar elementos HTML.",
         'box-sql': "Habilidade em SQL, utilizado para gerenciar e consultar bancos de dados relacionais.",
         'box-js': "Conhecimento em JavaScript, usado para adicionar interatividade e dinamismo às páginas web.",
-        'box-java': "Habilidade em Java, utilizado para desenvolver aplicativos de software robustos e escaláveis.",
+        'box-bootstrap': "Proficiente em Bootstrap, um framework front-end utilizado para criar interfaces web responsivas e estilizadas com facilidade.",
         'box-csharpe': "Conhecimento em C#, usado principalmente para desenvolvimento de software na plataforma .NET.",
         'box-angular': "Habilidade em Angular, um framework JavaScript para construção de aplicações web dinâmicas e escaláveis.",
         'box-git': "Conhecimento em Git, utilizado para controle de versão e colaboração em projetos de desenvolvimento."
